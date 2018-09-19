@@ -13,7 +13,7 @@ which nginx &>/dev/null || {
 }
 
 # stop nginx service
-sudo service nginx stop
+service nginx stop
 
 # start nginx service
-sudo service nginx start
+service nginx start
