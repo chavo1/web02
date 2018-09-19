@@ -4,12 +4,12 @@ exec 2>&1
 
 which curl &>/dev/null || {
   sudo apt-get update
-  sudo apt-get install curl
+  sudo apt-get install -y curl
 }
 
 which nginx &>/dev/null || {
   sudo apt-get update
-  sudo apt-get install nginx
+  sudo apt-get install -y nginx
 }
 
 # stop nginx service
