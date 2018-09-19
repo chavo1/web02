@@ -3,17 +3,15 @@
 exec 2>&1
 
 which curl &>/dev/null || {
-  sudo apt-get update
-  sudo apt-get install -y curl
+  sudo yum install curl
 }
 
 which nginx &>/dev/null || {
-  sudo apt-get update
-  sudo apt-get install -y nginx
+  sudo yum install -y nginx
 }
 
 # stop nginx service
-service nginx stop
+sudo service nginx stop
 
 # start nginx service
-service nginx start
+sudo service nginx start
